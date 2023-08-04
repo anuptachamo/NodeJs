@@ -1,14 +1,16 @@
 const express = require('express')  //put value
 const app =express()      //calling
 
+//setting up ejs, telling nodejs to use ejs
+app.set('view engine', 'ejs')
 
 // Request(req)/Response(res) cycle
 app.get('/',(req, res) =>{
-    res.send('I am in hello Page');
+    res.render('home.ejs', {name:'Anup',age:'21'});
 });
 
 app.get('/about',(req, res) =>{
-    res.send('I am in hello Page');
+    res.render('about.ejs');
 });
 
 app.get('/contact',(req, res) =>{
