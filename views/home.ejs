@@ -3,11 +3,61 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Testing of Nodejs project</title>
+
+
+
+    <style>
+        /* Internal CSS */
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+        }
+
+        /* Navbar styles */
+        .navbar {
+            background-color: #333;
+            overflow: hidden;
+        }
+
+        .navbar a {
+            float: left;
+            display: block;
+            color: white;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+        }
+
+        .navbar a:hover {
+            background-color: #ddd;
+            color: black;
+        }
+
+        /* Optional: Add a "current" style to the active link */
+        .active {
+            background-color: #4CAF50;
+            color: white;
+        }
+    </style>
 </head>
 <body>
-    <h1> Name: <%- name %></h1>
-    <h1> Age: <%- age %></h1>
+    <!-- <h1> Name: <%- name %></h1>
+    <h1> Age: <%- age %></h1> -->
+
+    <div class="navbar">
+        <a class="active" href="#">Home</a>
+        <a href="/about">About</a>
+        <a href="#">Services</a>
+        <a href="#">Contact</a>
+    </div>
+
+    <h1>Welcome to <%- name %> website!</h1>
+    <form action="">
+        <input type="text" name="" id="" placeholder="Enter name"><br>
+        <input type="password" name="" id="" placeholder="Enter password"><br>
+        <button type="submit">Submit</button>
+    </form>
 
 </body>
 </html>

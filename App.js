@@ -1,6 +1,10 @@
 const express = require('express')  //put value
 const app =express()      //calling
 
+//require database
+require("./model/index")
+
+
 //setting up ejs, telling nodejs to use ejs
 app.set('view engine', 'ejs')
 

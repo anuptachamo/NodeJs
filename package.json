@@ -1,7 +1,6 @@
 {
   "name": "nodejsclass",
   "version": "1.0.0",
-  "description": "",
   "main": "index.js",
   "scripts": {
     "start": "nodemon app.js"
@@ -11,6 +10,17 @@
   "dependencies": {
     "ejs": "^3.1.9",
     "express": "^4.18.2",
-    "nodemon": "^3.0.1"
-  }
+    "mysql2": "^3.6.0",
+    "nodemon": "^3.0.1",
+    "sequelize": "^6.32.1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/anuptachamo/nodejslearning.git"
+  },
+  "bugs": {
+    "url": "https://github.com/anuptachamo/nodejslearning/issues"
+  },
+  "homepage": "https://github.com/anuptachamo/nodejslearning#readme",
+  "description": ""
 }
